@@ -23,6 +23,7 @@ input {
   outline-color: hsl(243, 100%, 62%);
 }
 button {
+  cursor: pointer;
   border: none;
   font-weight: bold;
 }
@@ -53,7 +54,21 @@ p {
   background-color: white;
   border-radius: 1rem;
   padding: 1.5rem;
+  overflow-y: hidden;
+  transition: all 0.3s ease;
+  min-width: 50vw;
+  min-height: 65vh;
+  header{
+    flex: 1 auto
+  }
+  section{
+    flex: 2 auto
+  }
+  
 }
 
 @import "./nav";
 @import "./info";
+@import "./plan";
+@import "./addon";
+@import "./summary";
